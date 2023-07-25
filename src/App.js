@@ -56,7 +56,6 @@ function App() {
                 <a href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Projects</a>
                 <a href='#Contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Contact me</a>
               </motion.div>
-
             )}
           </div>
         </nav>
@@ -198,7 +197,6 @@ function App() {
               </VerticalTimelineElement>
             </VerticalTimeline>
           </section>
-
 
           {/*Project section*/}
           <section className='items-center justify-center gap-4 pt-11' id='projects'>
