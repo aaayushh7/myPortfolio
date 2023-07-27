@@ -1,6 +1,6 @@
 import Spline from '@splinetool/react-spline';
 import { useState } from 'react';
-import { IoMenu, IoLogoGithub, IoLogoLinkedin, IoLogoTux, IoHardwareChipOutline, IoNuclearOutline, IoLogoAndroid, IoAtCircleOutline, IoFastFoodOutline, IoGitBranch, IoCodeSlash } from 'react-icons/io5'
+import { IoMenu, IoLogoGithub, IoLogoLinkedin, IoLogoTux, IoHardwareChipOutline, IoNuclearOutline, IoLogoAndroid, IoAtCircleOutline, IoFastFoodOutline, IoGitBranch, IoCodeSlash, IoArrowDownCircleOutline } from 'react-icons/io5'
 import ayush from './Images/Ayush.jpg';
 import website from './Images/foodilse.jpg';
 import appl from './Images/Calc.jpg';
@@ -21,9 +21,20 @@ import 'swiper/css/scrollbar';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
+
+const Resume = 'http://localhost:3000/resume.pdf'
 function App() {
 
   const [isActive, setIsActive] = useState(false)
+  const downloadFileAtURL = (url) => {
+    const fileName = url.split('/').pop();
+    const aTag = document.createElement('a');
+    aTag.href = url;
+    aTag.setAttribute('download', fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
   return (
 
     <AnimatePresence initial={false}>
@@ -37,6 +48,18 @@ function App() {
               <a href='#about' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> About</a>
               <a href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Projects</a>
               <a href='#Contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Contact me</a>
+              <button
+                onClick={() => {
+                  downloadFileAtURL('Resume');
+                }}
+                className="ml-auto text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-4 py-2 rounded-3xl transition-all border border-icodow"
+                style={{
+                  transitionDuration: '0.5s', 
+                }}
+              >
+                <IoArrowDownCircleOutline className="h-6 w-6" /> 
+                <span>Resume</span> 
+              </button>
             </div>
 
             <motion.div
@@ -50,11 +73,20 @@ function App() {
                 animate={{ opacity: 1, scale: 1.1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ delay: 0.1, type: 'tween' }}
-                className='p-4 w-275 bg-navBar rounded-lg fixed top-20 right-16 flex flex-col items-center justify-evenly gap-5'>
+                className='p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-5'>
                 <a href='#home' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Home</a>
                 <a href='#about' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> About</a>
                 <a href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Projects</a>
                 <a href='#Contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Contact me</a>
+                <button
+                  onClick={() => {
+                    downloadFileAtURL('Resume');
+                  }}
+                  className="ml-auto text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-4 px-4 py-2 rounded-3xl"
+                >
+                  <IoArrowDownCircleOutline className="h-6 w-6" />
+                  <span>Resume</span>
+                </button>
               </motion.div>
             )}
           </div>

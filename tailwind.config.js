@@ -42,6 +42,8 @@ module.exports = {
         textBase: "#8f9091",
         te: "#ffffff",
         linked: "0072b1",
+        icodow: "#1F51FF",
+        shadowlue: "#C0C0C0"
        
       },
     },
