@@ -52,10 +52,8 @@ function App() {
                 onClick={() => {
                   downloadFileAtURL('Resume');
                 }}
-                className="ml-auto text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-4 py-2 rounded-3xl transition-all border border-icodow"
-                style={{
-                  transitionDuration: '0.5s', 
-                }}
+                className="ml-auto text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-500 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-3 py-1 rounded-3xl border border-icodow"
+                
               >
                 <IoArrowDownCircleOutline className="h-6 w-6" /> 
                 <span>Resume</span> 
@@ -79,14 +77,14 @@ function App() {
                 <a href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Projects</a>
                 <a href='#Contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Contact me</a>
                 <button
-                  onClick={() => {
-                    downloadFileAtURL('Resume');
-                  }}
-                  className="ml-auto text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-4 px-4 py-2 rounded-3xl"
-                >
-                  <IoArrowDownCircleOutline className="h-6 w-6" />
-                  <span>Resume</span>
-                </button>
+                onClick={() => {
+                  downloadFileAtURL('Resume');
+                }}
+                className="text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-500 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-3 py-1 rounded-3xl border border-icodow"    
+              >
+                <IoArrowDownCircleOutline className="h-6 w-6" /> 
+                <span>Resume</span> 
+              </button>
               </motion.div>
             )}
           </div>
