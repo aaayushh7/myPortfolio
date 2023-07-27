@@ -22,18 +22,20 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
-const Resume = 'http://localhost:3000/resume.pdf'
 function App() {
 
   const [isActive, setIsActive] = useState(false)
-  const downloadFileAtURL = (url) => {
-    const fileName = url.split('/').pop();
-    const aTag = document.createElement('a');
-    aTag.href = url;
-    aTag.setAttribute('download', fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleDownloadResume = () => {
+    setIsLoading(true);
+
+    // Simulate loading for 2 seconds (you can adjust the duration as needed)
+    setTimeout(() => {
+      setIsLoading(false);
+      // Trigger the download link programmatically after the loading animation finishes
+      // window.open('https://drive.google.com/uc?export=download&id=1iwnBKJoSq0-9-CUg5oJqGBXR6IcOPRs8', '_blank');
+    }, 3000);
   };
   return (
 
@@ -49,15 +51,17 @@ function App() {
               <a href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Projects</a>
               <a href='#Contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Contact me</a>
               <button
-                onClick={() => {
-                  downloadFileAtURL('Resume');
-                }}
-                className="ml-auto text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-500 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-3 py-1 rounded-3xl border border-icodow"
-                
-              >
-                <IoArrowDownCircleOutline className="h-6 w-6" /> 
-                <span>Resume</span> 
-              </button>
+                  onClick={handleDownloadResume}
+                  className="ml-auto text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-500 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-3 py-1 rounded-3xl border border-icodow"
+                >
+                  <a href='https://drive.google.com/uc?export=download&id=1iwnBKJoSq0-9-CUg5oJqGBXR6IcOPRs8' className="flex items-center gap-2">
+                    <IoArrowDownCircleOutline className="h-6 w-6" />
+                    <span>Resume</span>
+                  </a>
+                  {isLoading && (
+                    <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
+                  )}
+                </button>
             </div>
 
             <motion.div
@@ -71,20 +75,23 @@ function App() {
                 animate={{ opacity: 1, scale: 1.1 }}
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ delay: 0.1, type: 'tween' }}
-                className='p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center justify-evenly gap-5'>
+                className='p-4 w-275 bg-navBar rounded-lg fixed top-24 right-10 flex flex-col items-center justify-evenly gap-5'>
                 <a href='#home' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Home</a>
                 <a href='#about' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> About</a>
                 <a href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Projects</a>
                 <a href='#Contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Contact me</a>
                 <button
-                onClick={() => {
-                  downloadFileAtURL('Resume');
-                }}
-                className="text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-500 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-3 py-1 rounded-3xl border border-icodow"    
-              >
-                <IoArrowDownCircleOutline className="h-6 w-6" /> 
-                <span>Resume</span> 
-              </button>
+                  onClick={handleDownloadResume}
+                  className="text-base text-slate-300 font-medium hover:text-slate-100 cursor-pointer duration-500 ease-in-out hover:bg-icodow shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-3 py-1 rounded-3xl border border-icodow"
+                >
+                  <a href='https://drive.google.com/uc?export=download&id=1iwnBKJoSq0-9-CUg5oJqGBXR6IcOPRs8' className="flex items-center gap-2">
+                    <IoArrowDownCircleOutline className="h-6 w-6" />
+                    <span>Resume</span>
+                  </a>
+                  {isLoading && (
+                    <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
+                  )}
+                </button>
               </motion.div>
             )}
           </div>
@@ -109,7 +116,7 @@ function App() {
                 <img
                   src={ayush}
                   alt=''
-                  loading='lazy' // Add the lazy loading attribute here
+                  loading='lazy'
                   className='w-full h-full absolute -right-4 top-4 object-cover rounded-full shadow-lg'
                 />
               </div>

@@ -57,12 +57,6 @@ position: relative;
 
 }
 
-/* tailwind.css or your custom CSS file */
-.z-200 {
-  z-index: 200;
-}
-
-
 .swiper-button-next {
     right: 0 !important;
     top: 0 !important;
