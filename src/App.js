@@ -30,11 +30,9 @@ function App() {
   const handleDownloadResume = () => {
     setIsLoading(true);
 
-    // Simulate loading for 2 seconds (you can adjust the duration as needed)
     setTimeout(() => {
       setIsLoading(false);
-      // Trigger the download link programmatically after the loading animation finishes
-      // window.open('https://drive.google.com/uc?export=download&id=1iwnBKJoSq0-9-CUg5oJqGBXR6IcOPRs8', '_blank');
+      
     }, 3000);
   };
   return (
