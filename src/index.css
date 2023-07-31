@@ -78,6 +78,45 @@ position: relative;
   background-color: #3e3f46 !important;
   transition: 400ms ease-in-out !important;
 } 
+/* styles.css */
+
+/* Corner loading animation */
+.corner-loader {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999; /* Set a high z-index to make sure it appears above other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Better loading animation */
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  /* Add the following lines to center the loader content */
+  position: relative;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Progress percentage style */
+.progress {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+
+
 
 
 
