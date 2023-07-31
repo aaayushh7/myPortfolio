@@ -119,7 +119,7 @@ function App() {
                     contentStyle={{ background: 'rgb(25, 39, 52)', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(136, 153, 166)' }}
                     date={n.date}
-                    iconStyle={{ background: '#fa9c1b', color: '#fff' }}
+                    iconStyle={{ background: '#017562', color: '#fff' }}
                     icon={n.iconsSrc}
                   >
                     <h3 className="vertical-timeline-element-title">{n.title}</h3>
