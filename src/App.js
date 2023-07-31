@@ -21,10 +21,9 @@ function App() {
 
     <AnimatePresence initial={false}>
       <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
-
         {/*Navigation bar*/}
         <Navbar />
-
+        {/* 3d models  */}
         <div className="relative h-screen w-full" id="home">
           <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" />
           <div className='absolute bottom-5 w-full justify-center items-center flex'>
