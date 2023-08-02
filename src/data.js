@@ -37,7 +37,7 @@ export const Experience = [
         id: 5,
         date: "Apr'22-December'22",
         iconsSrc: <IoCodeSlash />,
-        title: "Java/C/Cpp/Python/JavaScript/TS",
+        title: "Java/C/Cpp/Python/JS/TS",
         location: "Resources",
         description: "Object-Oriented, Algorithms, Databases, Libraries"
     },
