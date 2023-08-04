@@ -16,9 +16,10 @@ const Navbar = () => {
 
         }, 3000);
     };
+    
     return (
         <AnimatePresence initial={false}>
-            <nav className='w-full px-6 z-50 fixed inset-x-0  top-2 flex justify-center items-center'>
+            <nav className='w-full px-6 z-50 sticky inset-x-0  top-2 flex justify-center items-center'>
                 <div className='w-full p-4 md:w-880 bg-navBar rounded-2xl flex items-center'>
                     <p className='text-lg text-slate-200 cursor-pointer'><b>Ayush Tiwari</b></p>
                     <div className='hidden md:flex items-center gap-9 ml-12 flex-1'>
