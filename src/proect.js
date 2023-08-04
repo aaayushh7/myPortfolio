@@ -30,7 +30,7 @@ const Project = () => {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
                 breakpoints={{
-                  // When window width is <= 767px
+                // When window width is <= 767px
                   767: {
                     slidesPerView: 1,
                   },
