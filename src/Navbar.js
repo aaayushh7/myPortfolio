@@ -16,7 +16,6 @@ const Navbar = () => {
 
         }, 3000);
     };
-    
     return (
         <AnimatePresence initial={false}>
             <nav className='w-full px-6 z-50 sticky inset-x-0  top-2 flex justify-center items-center'>
@@ -25,6 +24,7 @@ const Navbar = () => {
                     <div className='hidden md:flex items-center gap-9 ml-12 flex-1'>
                         <a href='#home' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Home</a>
                         <a href='#about' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> About</a>
+                        <a href='#timeline' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Timeline</a>
                         <a href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Projects</a>
                         <a href='#Contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Contact me</a>
                         <button
@@ -55,6 +55,7 @@ const Navbar = () => {
                             className='p-4 w-275 bg-navBar rounded-lg fixed top-24 right-10 flex flex-col items-center justify-evenly gap-5'>
                             <a href='#home' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Home</a>
                             <a href='#about' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> About</a>
+                            <a href='#timeline' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Timeline</a>
                             <a href='#projects' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Projects</a>
                             <a href='#Contact' className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Contact me</a>
                             <button
