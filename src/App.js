@@ -4,35 +4,25 @@ import 'react-vertical-timeline-component/style.min.css';
 import { AnimatePresence, motion } from 'framer-motion';
 import 'swiper/css';
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+
+
 import Project from './proect';
 import About from './about';
 import Navbar from './Navbar';
-import TimeLine from './time';
-import Lottie from "lottie-react"
-import animationData from './Images/animation_ll35mrxz.json'
+import TimeLin from './time';
 
 function App() {
 
   return (
 
     <AnimatePresence initial={false}>
-      <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-10">
+      <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
         {/*Navigation bar*/}
         <Navbar />
         {/* 3d models  */}
-        <div className="relative w-[500px] h-[500px] my-24 pb-20" id="home">
-          {/* <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" /> */}
-          <Lottie animationData={animationData} />
-          <div className="flex justify-center items-center h-full mt-10 pt-10"><button className="absolute justify-center items-center flex animate-button bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out">
-            Go to 3d model manually!
-          </button></div>
-
-
+        <div className="relative h-screen w-screen" id='home'
+        >
+          <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" />
           <div className='absolute bottom-5 w-full justify-center items-center flex'>
             <div className='shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl cursor-pointer'>
               <IoAtCircleOutline className='text-md text-textBase'>
@@ -46,7 +36,8 @@ function App() {
           {/*about section*/}
           <About />
           {/*Timeline Section*/}
-          <TimeLine />
+          <TimeLin />
+
           {/*Project section*/}
           <Project />
           {/* contact section  */}

@@ -2,7 +2,6 @@ import { IoMenu, IoArrowDownCircleOutline } from 'react-icons/io5'
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-
 const Navbar = () => {
 
     const [isActive, setIsActive] = useState(false)
@@ -17,7 +16,7 @@ const Navbar = () => {
         }, 3000);
     };
     return (
-        <AnimatePresence initial={false}>
+        <AnimatePresence>
             <nav className='w-full px-6 z-50 sticky inset-x-0  top-2 flex justify-center items-center'>
                 <div className='w-full p-4 md:w-880 bg-navBar rounded-2xl flex items-center'>
                     <p className='text-lg text-slate-200 cursor-pointer'><b>Ayush Tiwari</b></p>
@@ -75,6 +74,7 @@ const Navbar = () => {
                 </div>
             </nav>
         </AnimatePresence>
+        
     );
 
 };

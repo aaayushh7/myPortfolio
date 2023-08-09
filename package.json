@@ -5,7 +5,7 @@
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@splinetool/react-spline": "^2.2.6",
-    "@splinetool/runtime": "^0.9.411",
+    "@splinetool/runtime": "^0.9.414",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-lazy-load-image-component": "^1.6.0",
+    "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "react-vertical-timeline-component": "^3.6.0",
