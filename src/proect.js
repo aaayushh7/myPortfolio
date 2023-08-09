@@ -97,8 +97,8 @@ const Project = () => {
                     src={anp}
                     alt=''
                     effect='blur' // Optional: Add blur effect while loading
-                    className='w-full h-full object-cover rounded-md my-4'
-                  />                <div className='flex flex-1 items-center justify-between'>
+                    className='w-full h-full object-cover rounded-md my-4'/>
+                               <div className='flex flex-1 items-center justify-between'>
                     <p className='text-lg text-gray-200'>
                       Technologies
                       <span className='block text-sm text-gray-400'>
@@ -118,7 +118,7 @@ const Project = () => {
                     Disaster Prediction
                   </p>
                   <LazyLoadImage
-                    src={disp}
+                     src={disp}
                     alt=''
                     effect='blur' // Optional: Add blur effect while loading
                     className='w-full h-full object-cover rounded-md my-4'
@@ -135,7 +135,7 @@ const Project = () => {
                       </div>
                     </a>
                   </div>
-                </div></SwiperSlide>
+                </div></SwiperSlide> 
                 <SwiperSlide className='pt-11'>
                   <div className='border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
                     <div className='flex flex-1 items-center justify-between'>
