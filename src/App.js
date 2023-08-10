@@ -3,9 +3,6 @@ import { IoLogoGithub, IoLogoLinkedin, IoAtCircleOutline } from 'react-icons/io5
 import 'react-vertical-timeline-component/style.min.css';
 import { AnimatePresence, motion } from 'framer-motion';
 import 'swiper/css';
-// Import Swiper styles
-
-
 import Project from './proect';
 import About from './about';
 import Navbar from './Navbar';

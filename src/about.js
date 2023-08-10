@@ -2,8 +2,10 @@ import ayush from './Images/Ayush.jpg';
 
 const About = () => {
     return (
+      
         <section className='w-full grid grid-cols-1 pt-7 md:grid-cols-2 gap-4 my-24' id='about'>
-        {/* Image box */}
+       {/* Image box */}
+       
         <div className='w-full h-440 pb-6 pt-11 flex items-center justify-center'>
           <div className='w-200 h-200 md:h-300 md:w-300 bg-gradient-to-b from-fuchsia-500 via-red-600 to-orange-400 rounded-full relative'>
             <img
