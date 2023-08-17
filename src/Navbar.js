@@ -1,8 +1,10 @@
 import { IoMenu, IoArrowDownCircleOutline } from 'react-icons/io5'
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import React from 'react';
 
-const Navbar = () => {
+
+const Navbar = React.memo(() => {
 
     const [isActive, setIsActive] = useState(false)
     const [isLoading, setIsLoading] = useState(false);
@@ -77,6 +79,7 @@ const Navbar = () => {
         
     );
 
-};
+});
 
-export default Navbar;
+
+export default React.memo(Navbar);

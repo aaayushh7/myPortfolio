@@ -14,8 +14,8 @@ export const Experience = [
         date: "Mar' 23",
         iconsSrc: <IoLogoAndroid />,
         title: "AppDev",
-        location: "Android Studio",
-        description: "Worked with java,kotlin and xml to create an SGPA/CGPA calc. app to calculate SGPA/CGPA in seconds, optimised app performance and resposiveness"
+        location: "Women Safety",
+        description: "A women's safety app that sends instant SOS messages, including precise location, to trusted contact, ensuring swift help during emergencies"
     }, {
         id: 3,
         date: "Dec'2022",

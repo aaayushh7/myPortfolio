@@ -1,17 +1,15 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import 'swiper/css/pagination';
 import website from './Images/foodilse.jpg';
 import appl from './Images/Calc.jpg';
 import anp from './Images/ANPR.jpg';
 import disp from './Images/DisPred.jpg';
 import 'swiper/css/scrollbar';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import {IoLogoGithub} from 'react-icons/io5';
 
 const Project = () => {
@@ -47,7 +45,7 @@ const Project = () => {
                   <LazyLoadImage
                     src={website}
                     alt=''
-                    effect='blur'
+                    effect='opacity'
                     className='w-full h-full object-cover rounded-md my-4'
                   />
                   <div className='flex flex-1 items-center justify-between'>
@@ -66,12 +64,12 @@ const Project = () => {
                 </div></SwiperSlide>
                 <SwiperSlide className='pt-11'><div className='border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
                   <p className='text-lg text-textBase font-medium uppercase'>
-                    SGPA/CGPA calculator
+                   WomenSafety app
                   </p>
                   <LazyLoadImage
                     src={appl}
                     alt=''
-                    effect='blur' // Optional: Add blur effect while loading
+                    effect='opacity' // Optional: Add blur effect while loading
                     className='w-full h-full object-cover rounded-md my-4'
                   />
                   <div className='flex flex-1 items-center justify-between'>
@@ -96,7 +94,7 @@ const Project = () => {
                   <LazyLoadImage
                     src={anp}
                     alt=''
-                    effect='blur' // Optional: Add blur effect while loading
+                    effect='opacity' // Optional: Add blur effect while loading
                     className='w-full h-full object-cover rounded-md my-4'/>
                                <div className='flex flex-1 items-center justify-between'>
                     <p className='text-lg text-gray-200'>
@@ -120,7 +118,7 @@ const Project = () => {
                   <LazyLoadImage
                      src={disp}
                     alt=''
-                    effect='blur' // Optional: Add blur effect while loading
+                    effect='opacity' // Optional: Add blur effect while loading
                     className='w-full h-full object-cover rounded-md my-4'
                   />                <div className='flex flex-1 items-center justify-between'>
                     <p className='text-lg text-gray-200'>

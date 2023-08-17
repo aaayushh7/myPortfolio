@@ -2,7 +2,6 @@ import Spline from '@splinetool/react-spline';
 import { IoLogoGithub, IoLogoLinkedin, IoAtCircleOutline } from 'react-icons/io5'
 import 'react-vertical-timeline-component/style.min.css';
 import { AnimatePresence, motion } from 'framer-motion';
-import 'swiper/css';
 import Project from './proect';
 import About from './about';
 import Navbar from './Navbar';
@@ -17,8 +16,7 @@ function App() {
         {/*Navigation bar*/}
         <Navbar />
         {/* 3d models  */}
-        <div className="relative h-screen w-screen" id='home'
-        >
+        <div className="relative h-screen w-[99%]" id='home'>
           <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" />
           <div className='absolute bottom-5 w-full justify-center items-center flex'>
             <div className='shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl cursor-pointer'>
