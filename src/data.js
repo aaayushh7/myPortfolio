@@ -6,7 +6,7 @@ export const Experience = [
         date: "Nov' 22",
         iconsSrc: <IoFastFoodOutline />,
         title: "WebDev",
-        location: "foodilse.in",
+        location: "foodilse.in,ArcadeIntelligence",
         description: "UI/UX, proficient in html,css,JS,ReactJS. Responsive webDesign principles and frameworks(Tailwind, Bootstrap), DBMS, control system(Git), Collaboration tool(Github)"
     },
     {
@@ -47,6 +47,6 @@ export const Experience = [
         iconsSrc: <IoGitBranch />,
         title: "Loading...",
         location: "Enhancing Skills",
-        description: " Actively acquiring proficiency in emerging technologies."
+        description: " Actively acquiring proficiency in emerging technologies.(Kubernetes, Go)"
     },
 ]
