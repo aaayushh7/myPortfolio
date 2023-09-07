@@ -1,11 +1,11 @@
-import Spline from '@splinetool/react-spline';
-import { IoLogoGithub, IoLogoLinkedin, IoAtCircleOutline } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import 'react-vertical-timeline-component/style.min.css';
 import { AnimatePresence, motion } from 'framer-motion';
 import Project from './proect';
 import About from './about';
 import Navbar from './Navbar';
 import TimeLin from './time';
+import Plinefile from './spline';
 
 function App() {
 
@@ -16,16 +16,7 @@ function App() {
         {/*Navigation bar*/}
         <Navbar />
         {/* 3d models  */}
-        <div className="relative h-screen w-[99%]" id='home'>
-          <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" />
-          <div className='absolute bottom-5 w-full justify-center items-center flex'>
-            <div className='shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl cursor-pointer'>
-              <IoAtCircleOutline className='text-md text-textBase'>
-              </IoAtCircleOutline>
-              <p className='text-md text-textBase'>ayushtiwari.co</p>
-            </div>
-          </div>
-        </div>
+        < Plinefile/>
         {/*Main section */}
         <main className='w-[80%] mt-11'>
           {/*about section*/}
