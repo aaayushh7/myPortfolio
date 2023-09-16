@@ -22,7 +22,6 @@ function App() {
           <About />
           {/*Timeline Section*/}
           <TimeLin />
-
           {/*Project section*/}
           <Project />
           {/* contact section  */}
@@ -50,7 +49,6 @@ function App() {
         </main>
       </div>
     </AnimatePresence>
-
   );
 }
 
