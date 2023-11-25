@@ -19,6 +19,36 @@ body {
     sans-serif;
 
 }
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+/* Pulse animation with opacity delay */
+@keyframes pulse-delay {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Apply pulse animation */
+.animate-pulse {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Apply pulse animation with opacity delay */
+.animate-pulse-delay {
+  animation: pulse-delay 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -29,6 +59,9 @@ code {
 body::-webkit-scrollbar,html::-webkit-scrollbar{
   display: none;
 }
+
+
+
 
 @tailwind base;
 @tailwind components;
