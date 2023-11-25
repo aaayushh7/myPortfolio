@@ -26,43 +26,44 @@ export default function SplineScene() {
   }, []);
 
   return (
+    
+      <section className="relative h-screen w-[99%]" id='home'>
+        {loading ? (
+          <div className="absolute z-10 flex items-center justify-center bg-black bg-opacity-40 w-full h-full">
+            <div className="text-lg text-white">
+              <div className="text-center">
+                <div className="text-md font-bold text-textBase pb-1">
+                  Desk Loading {progress.toFixed(1)}%
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div className="w-11 h-11 rounded-full animate-pulse flex items-center justify-center">
+                  <div className="w-5 h-5 bg-icodow rounded-full animate-spin"></div>
+                </div>
+              </div>
 
-    <div className="relative h-screen w-[99%]">
-      {loading ? (
-        <div className="absolute inset-0 z-10 flex items-center justify-center bg-black bg-opacity-40">
-          <div className="text-lg text-white">
-            <div className="animate-pulse text-center">
-              <div className="text-md font-bold text-textBase pb-1">
-                Desk Loading {progress.toFixed(1)}%
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-11 h-11 rounded-full animate-pulse flex items-center justify-center">
-                <div className="w-5 h-5 bg-icodow rounded-full animate-spin"></div>
-              </div>
-              </div>
-
-          </div>
-        </div>
-      ) : (
-        <>
-          <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" />
-          <div className='absolute bottom-5 w-full justify-center items-center flex'>
-            <div className='shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl cursor-pointer'>
-              <IoAtCircleOutline className='text-md text-textBase'></IoAtCircleOutline>
-              <p className='text-md text-textBase'>ayushtiwari.co</p>
             </div>
           </div>
-        </>
-      )}
+        ) : (
+          <>
+            <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" />
+            <div className='absolute bottom-5 w-full justify-center items-center flex'>
+              <div className='shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl cursor-pointer'>
+                <IoAtCircleOutline className='text-md text-textBase'></IoAtCircleOutline>
+                <p className='text-md text-textBase'>ayushtiwari.co</p>
+              </div>
+            </div>
+          </>
+        )}
 
-    </div>
+      </section>
+    
   );
 }
 
 
 
-
+// previous code ...
 
 
 // import React from 'react'
