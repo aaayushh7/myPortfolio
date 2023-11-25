@@ -25,11 +25,13 @@ export default function SplineScene() {
     return () => clearInterval(timer);
   }, []);
 
+  const splineSceneURL = "https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode";
+
   return (
     
       <section className="relative h-screen w-[99%]" id='home'>
         {loading ? (
-          <div className="absolute z-10 flex items-center justify-center bg-black bg-opacity-40 w-full h-full">
+          <div className="absolute z-10 flex items-center justify-center bg-black bg-opacity-20 w-full h-full">
             <div className="text-lg text-white">
               <div className="text-center">
                 <div className="text-md font-bold text-textBase pb-1">
@@ -46,7 +48,8 @@ export default function SplineScene() {
           </div>
         ) : (
           <>
-            <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" />
+            <Spline scene={splineSceneURL} />
+
             <div className='absolute bottom-5 w-full justify-center items-center flex'>
               <div className='shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl cursor-pointer'>
                 <IoAtCircleOutline className='text-md text-textBase'></IoAtCircleOutline>
@@ -57,7 +60,6 @@ export default function SplineScene() {
         )}
 
       </section>
-    
   );
 }
 
