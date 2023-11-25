@@ -6,8 +6,8 @@ export const Experience = [
         date: "Nov' 22",
         iconsSrc: <IoFastFoodOutline />,
         title: "WebDev",
-        location: "foodilse.in,ArcadeIntelligence",
-        description: "UI/UX, proficient in html,css,JS,ReactJS. Responsive webDesign principles and frameworks(Tailwind, Bootstrap), DBMS, control system(Git), Collaboration tool(Github)"
+        location: "React,Next,Go",
+        description: "Go tools for new developers to [verify emails(spf,dmarc etc), chatgpt for terminal, sentence completion] and much more in Github"
     },
     {
         id: 2,
