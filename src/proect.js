@@ -41,9 +41,9 @@ const Project = () => {
             },
           }} 
         coverflowEffect={{
-          rotate: 15, // Adjust the rotation angle
+          rotate: 0, // Adjust the rotation angle
           stretch: 10, // Adjust the stretch effect
-          depth: 100, // Adjust the depth effect
+          depth: 120, // Adjust the depth effect
           modifier: 2.5, 
         }}
         pagination={{ el: '.swiper-pagination', clickable: true }}
@@ -55,7 +55,7 @@ const Project = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
-                <SwiperSlide className='pt-11 pb-11'><div className='backdrop-blur-sm border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+                <SwiperSlide className='pt-11 pb-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
                   <p className='text-lg text-textBase font-medium uppercase'>
                     E-commerce website
                   </p>
@@ -79,7 +79,7 @@ const Project = () => {
                     </a>
                   </div>
                 </div></SwiperSlide>
-                <SwiperSlide className='pt-11'><div className=' backdrop-blur-sm  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+                <SwiperSlide className='pt-11'><div className='backdrop-blur-xl border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
                   <p className='text-lg text-textBase font-medium uppercase'>
                    WomenSafety app
                   </p>
@@ -104,7 +104,7 @@ const Project = () => {
                   </div>
                 </div>
                 </SwiperSlide>
-                <SwiperSlide className='pt-11'><div className=' backdrop-blur-sm  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+                <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
                   <p className='text-lg text-textBase font-medium uppercase'>
                     NumberPlate Detection
                   </p>
@@ -127,7 +127,7 @@ const Project = () => {
                     </a>
                   </div>
                 </div></SwiperSlide>
-                <SwiperSlide className='pt-11'><div className=' backdrop-blur-sm  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+                <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
 
                   <p className='text-lg text-textBase font-medium uppercase'>
                     Disaster Prediction
@@ -151,7 +151,7 @@ const Project = () => {
                     </a>
                   </div>
                 </div></SwiperSlide> 
-                <SwiperSlide className='pt-11'><div className=' backdrop-blur-sm  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+                <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
 
                   <p className='text-lg text-textBase font-medium uppercase'>
                     Cancer Detection
@@ -175,7 +175,7 @@ const Project = () => {
                     </a>
                   </div>
                 </div></SwiperSlide> 
-                <SwiperSlide className='pt-11'><div className=' backdrop-blur-sm  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+                <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
 
                   <p className='text-lg text-textBase font-medium uppercase'>
                     More Projects
