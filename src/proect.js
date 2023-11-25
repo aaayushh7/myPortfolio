@@ -57,7 +57,7 @@ const Project = () => {
       >
                 <SwiperSlide className='pt-11 pb-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
                   <p className='text-lg text-textBase font-medium uppercase'>
-                    E-commerce website
+                    E-commerce for Hostelers
                   </p>
                   <LazyLoadImage
                     src={website}
@@ -69,7 +69,7 @@ const Project = () => {
                     <p className='text-lg text-gray-200'>
                       Technologies
                       <span className='block text-sm text-gray-400'>
-                        Html, Css, JavaScript
+                        JavaScript
                       </span>
                     </p>
                     <a href='https://github.com/aaayushh7'>
@@ -96,7 +96,7 @@ const Project = () => {
                         xml, Java, Kotlin
                       </span>
                     </p>
-                    <a href='https://github.com/aaayushh7/WebD-project'>
+                    <a href='https://github.com/aaayushh7'>
                       <div>
                         <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
                       </div>
@@ -117,7 +117,7 @@ const Project = () => {
                     <p className='text-lg text-gray-200'>
                       Technologies
                       <span className='block text-sm text-gray-400'>
-                        python and it's Libraries, Algorithm
+                        OpenCV
                       </span>
                     </p>
                     <a href='https://github.com/aaayushh7'>
@@ -141,10 +141,10 @@ const Project = () => {
                     <p className='text-lg text-gray-200'>
                       Technologies
                       <span className='block text-sm text-gray-400'>
-                        python and it's Libraries, Algorithm
+                        skLearn 
                       </span>
                     </p>
-                    <a href='https://github.com/aaayushh7/DisasterPrediction'>
+                    <a href='https://github.com/aaayushh7'>
                       <div>
                         <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
                       </div>
@@ -165,10 +165,10 @@ const Project = () => {
                     <p className='text-lg text-gray-200'>
                       Technologies
                       <span className='block text-sm text-gray-400'>
-                        python and it's Libraries, Algorithm
+                        Flask Deployment
                       </span>
                     </p>
-                    <a href='https://github.com/aaayushh7/DisasterPrediction'>
+                    <a href='https://github.com/aaayushh7'>
                       <div>
                         <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
                       </div>
@@ -192,7 +192,7 @@ const Project = () => {
                         Express, flask, sheri.js etc.
                       </span>
                     </p>
-                    <a href='https://github.com/aaayushh7/DisasterPrediction'>
+                    <a href='https://github.com/aaayushh7'>
                       <div>
                         <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
                       </div>
