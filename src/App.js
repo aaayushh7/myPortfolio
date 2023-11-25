@@ -6,6 +6,7 @@ import About from './about';
 import Navbar from './Navbar';
 import TimeLin from './time';
 import Plinefile from './spline';
+import './index.css'
 
 function App() {
 
