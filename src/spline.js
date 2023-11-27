@@ -67,7 +67,6 @@ export default function SplineScene() {
 
 // previous code ...
 
-
 // import React from 'react'
 // import Spline from '@splinetool/react-spline';
 // import {  IoAtCircleOutline } from 'react-icons/io5'
