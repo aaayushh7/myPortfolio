@@ -21,7 +21,7 @@ const Navbar = React.memo(() => {
     return (
         <AnimatePresence>
             <nav className='w-full px-6 z-50 fixed inset-x-0  top-2 flex justify-center items-center'>
-                <div className='w-full p-4 md:w-880 bg-navBar rounded-2xl flex items-center'>
+                <div className='w-full p-4 md:w-880 bg-navBar bg-opacity-50 backdrop-blur-lg rounded-2xl flex items-center'>
                     <p className='text-lg text-slate-200 cursor-pointer'><b>Ayush Tiwari</b></p>
                     <div className='hidden md:flex items-center gap-9 ml-12 flex-1'>
                         <Link to="home" spy={true} smooth={true} offset={50} duration={1000} className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out'> Home</Link>
@@ -48,17 +48,20 @@ const Navbar = React.memo(() => {
                         className='block md:hidden ml-auto cursor-pointer' onClick={() => setIsActive(!isActive)}>
                         <IoMenu className='text-2xl text-textBase cursor-pointer' />
                     </motion.div>
+                    
+                    <AnimatePresence>
                     {isActive && (
                         <motion.div
+                            key="mobile-menu"
                             initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1.1 }}
-                            exit={{ opacity: 0, scale: 0.5 }}
-                            transition={{ delay: 0.1, type: 'tween' }}
-                            className='p-4 w-275 bg-navBar rounded-lg fixed top-24 right-10 flex flex-col items-center justify-evenly gap-5'>
-                            <Link to="home" spy={true} smooth={true} offset={50} duration={1000} className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Home</Link>
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.3 }}
+                            transition={{ delay: 0.1, type: 'spring' }}
+                            className='p-4 w-275 bg-navBar bg-opacity-80 backdrop-blur-md drop-shadow-lg rounded-lg fixed top-24 right-10 flex flex-col items-center justify-evenly gap-5'>
+                            <Link to="home" spy={true} smooth={true} offset={50} duration={2000} className='text-base  text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Home</Link>
                             <Link to="about" spy={true} smooth={true} offset={0} duration={1000} className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> About</Link>
                             <Link to="timeline" spy={true} smooth={true} offset={0} duration={1000} className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Timeline</Link>
-                            <Link to="projects" spy={true} smooth={true} offset={0} duration={1000} className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Projects</Link>
+                            <Link to="projects" spy={true} smooth={true} offset={0} duration={1500} className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Projects</Link>
                             <Link to="Contact" spy={true} smooth={true} offset={0} duration={1000} className='text-base text-textBase font-medium hover:text-slate-100 cursor-pointer duration-100 ease-in-out' onClick={() => setIsActive(false)}> Contact me</Link>
                             <button
                                 onClick={handleDownloadResume}
@@ -73,7 +76,9 @@ const Navbar = React.memo(() => {
                                 )}
                             </button>
                         </motion.div>
+                       
                     )}
+                    </AnimatePresence>
                 </div>
             </nav>
         </AnimatePresence>
