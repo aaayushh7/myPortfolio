@@ -2,6 +2,7 @@
   "name": "port",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@splinetool/react-spline": "^2.2.6",
@@ -9,6 +10,7 @@
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
+    "@vitejs/plugin-react": "^4.2.1",
     "bootstrap": "^5.3.1",
     "depcheck": "^1.4.5",
     "framer-motion": "^10.12.18",
@@ -20,20 +22,22 @@
     "react-icons": "^4.10.1",
     "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.14.2",
-    "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "react-vertical-timeline-component": "^3.6.0",
     "styled": "^1.0.0",
     "styled-components": "^6.0.3",
     "swiper": "^10.2.0",
     "tailwindcss": "^3.3.2",
+    "vite": "^5.0.10",
+    "vite-plugin-svgr": "^4.2.0",
     "web-vitals": "^3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "vite build",
+    "test": "jest",
+    "eject": "vite eject",
+    "serve": "vite preview"
   },
   "eslintConfig": {
     "extends": [
@@ -52,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
