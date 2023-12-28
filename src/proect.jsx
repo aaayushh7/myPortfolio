@@ -13,10 +13,10 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import website from './Images/foodilse.jpg';
 import appl from './Images/Calc.jpg';
 import anp from './Images/ANPR.jpg';
-import disp from './Images/DisPred.jpg';
+import track from './Images/trackhub.png'
 import can from './Images/can.png';
 import more from './Images/gola.png'
-import git  from './Images/more.png'
+import git from './Images/more.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { IoLogoGithub } from 'react-icons/io5';
 
@@ -24,7 +24,7 @@ import { IoLogoGithub } from 'react-icons/io5';
 const Project = () => {
   return (
     <section className='items-center justify-center gap-4 pt-11' id='projects'>
-      <p className="w-full text-4xl text-center text-slate-300 font-bold pt-5 capitalize my-20 flex justify-center items-center pb-8">
+      <p className="w-full text-4xl text-center text-[#262627] font-bold pt-5 capitalize my-20 flex justify-center items-center pb-8">
         <b>few Projects</b>
       </p>
       <Swiper
@@ -47,6 +47,7 @@ const Project = () => {
           stretch: 10, // Adjust the stretch effect
           depth: 120, // Adjust the depth effect
           modifier: 2.5,
+          slideShadows: false,
         }}
         pagination={{ el: '.swiper-pagination', clickable: true }}
         navigation={{
@@ -57,9 +58,33 @@ const Project = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
-        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-white rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
 
-          <p className='text-lg text-textBase font-medium uppercase'>
+          <p className='text-lg text-[#262627] font-medium uppercase'>
+            TrackHub
+          </p>
+          <LazyLoadImage
+            src={track}
+            alt=''
+            effect='opacity' // Optional: Add blur effect while loading
+            className='w-full h-full object-cover rounded-md my-4'
+          />                <div className='flex flex-1 items-center justify-between'>
+            <p className='text-lg text-[#262627]'>
+              Technologies
+              <span className='block text-sm text-[#262627]'>
+                Next14,cheerio,fullStack
+              </span>
+            </p>
+            <a href='https://github.com/aaayushh7'>
+              <div>
+                <IoLogoGithub className='text-[#262627] text-3xl cursor-pointer' />
+              </div>
+            </a>
+          </div>
+        </div></SwiperSlide>
+        <SwiperSlide className='pt-11'><div className='backdrop-blur-xl  border-2 cursor-pointer border-white rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+
+          <p className='text-lg text-[#262627] font-medium uppercase'>
             Go Tools for developers
           </p>
           <LazyLoadImage
@@ -68,21 +93,21 @@ const Project = () => {
             effect='opacity' // Optional: Add blur effect while loading
             className='w-full h-full object-cover rounded-md my-4'
           />                <div className='flex flex-1 items-center justify-between'>
-            <p className='text-lg text-gray-200'>
+            <p className='text-lg text-[#262627]'>
               Technology
-              <span className='block text-sm text-gray-400'>
-               GoLang
+              <span className='block text-sm text-[#262627]'>
+                GoLang
               </span>
             </p>
             <a href='https://github.com/aaayushh7'>
               <div>
-                <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
+                <IoLogoGithub className='text-[#262627] text-3xl cursor-pointer' />
               </div>
             </a>
           </div>
         </div></SwiperSlide>
-        <SwiperSlide className='pt-11 pb-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out '>
-          <p className='text-lg text-textBase font-medium uppercase'>
+        <SwiperSlide className='pt-11 pb-11'><div className=' backdrop-blur-xl  border cursor-pointer border-white rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out '>
+          <p className='text-lg text-[#262627] font-medium uppercase'>
             E-commerce for Hostelers
           </p>
           <LazyLoadImage
@@ -92,21 +117,21 @@ const Project = () => {
             className='w-full h-full object-cover rounded-md my-4'
           />
           <div className='flex flex-1 items-center justify-between'>
-            <p className='text-lg text-gray-200'>
+            <p className='text-lg text-[#262627]'>
               Technologies
-              <span className='block text-sm text-gray-400'>
+              <span className='block text-sm text-[#262627]'>
                 JavaScript
               </span>
             </p>
             <a href='https://github.com/aaayushh7'>
               <div>
-                <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
+                <IoLogoGithub className='text-[#262627] text-3xl cursor-pointer' />
               </div>
             </a>
           </div>
         </div></SwiperSlide>
-        <SwiperSlide className='pt-11'><div className='backdrop-blur-xl border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
-          <p className='text-lg text-textBase font-medium uppercase'>
+        <SwiperSlide className='pt-11'><div className='backdrop-blur-xl border cursor-pointer border-white rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+          <p className='text-lg text-[#262627] font-medium uppercase'>
             WomenSafety app
           </p>
           <LazyLoadImage
@@ -116,22 +141,22 @@ const Project = () => {
             className='w-full h-full object-cover rounded-md my-4'
           />
           <div className='flex flex-1 items-center justify-between'>
-            <p className='text-lg text-gray-200'>
+            <p className='text-lg text-[#262627]'>
               Technologies
-              <span className='block text-sm text-gray-400'>
+              <span className='block text-sm text-[#262627]'>
                 xml, Java, Kotlin
               </span>
             </p>
             <a href='https://github.com/aaayushh7'>
               <div>
-                <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
+                <IoLogoGithub className='text-[#262627] text-3xl cursor-pointer' />
               </div>
             </a>
           </div>
         </div>
         </SwiperSlide>
-        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
-          <p className='text-lg text-textBase font-medium uppercase'>
+        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-white rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+          <p className='text-lg text-[#262627] font-medium uppercase'>
             NumberPlate Detection
           </p>
           <LazyLoadImage
@@ -140,46 +165,23 @@ const Project = () => {
             effect='opacity' // Optional: Add blur effect while loading
             className='w-full h-full object-cover rounded-md my-4' />
           <div className='flex flex-1 items-center justify-between'>
-            <p className='text-lg text-gray-200'>
+            <p className='text-lg text-[#262627]'>
               Technologies
-              <span className='block text-sm text-gray-400'>
+              <span className='block text-sm text-[#262627]'>
                 OpenCV
               </span>
             </p>
             <a href='https://github.com/aaayushh7'>
               <div>
-                <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
+                <IoLogoGithub className='text-[#262627] text-3xl cursor-pointer' />
               </div>
             </a>
           </div>
         </div></SwiperSlide>
-        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
 
-          <p className='text-lg text-textBase font-medium uppercase'>
-            Disaster Prediction
-          </p>
-          <LazyLoadImage
-            src={disp}
-            alt=''
-            effect='opacity' // Optional: Add blur effect while loading
-            className='w-full h-full object-cover rounded-md my-4'
-          />                <div className='flex flex-1 items-center justify-between'>
-            <p className='text-lg text-gray-200'>
-              Technologies
-              <span className='block text-sm text-gray-400'>
-                skLearn
-              </span>
-            </p>
-            <a href='https://github.com/aaayushh7'>
-              <div>
-                <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
-              </div>
-            </a>
-          </div>
-        </div></SwiperSlide>
-        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-white rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
 
-          <p className='text-lg text-textBase font-medium uppercase'>
+          <p className='text-lg text-[#262627] font-medium uppercase'>
             Cancer Detection
           </p>
           <LazyLoadImage
@@ -188,22 +190,22 @@ const Project = () => {
             effect='opacity' // Optional: Add blur effect while loading
             className='w-full h-full object-cover rounded-md my-4'
           />                <div className='flex flex-1 items-center justify-between'>
-            <p className='text-lg text-gray-200'>
+            <p className='text-lg text-[#262627]'>
               Technologies
-              <span className='block text-sm text-gray-400'>
+              <span className='block text-sm text-[#262627]'>
                 Flask Deployment
               </span>
             </p>
             <a href='https://github.com/aaayushh7'>
               <div>
-                <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
+                <IoLogoGithub className='text-[#262627] text-3xl cursor-pointer' />
               </div>
             </a>
           </div>
         </div></SwiperSlide>
-        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-zinc-800 rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
+        <SwiperSlide className='pt-11'><div className=' backdrop-blur-xl  border cursor-pointer border-white rounded-md p-2 min-w-[275px] md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out'>
 
-          <p className='text-lg text-textBase font-medium uppercase'>
+          <p className='text-lg text-[#262627] font-medium uppercase'>
             More Projects
           </p>
           <LazyLoadImage
@@ -212,15 +214,15 @@ const Project = () => {
             effect='opacity' // Optional: Add blur effect while loading
             className='w-full h-full object-cover rounded-md my-4'
           />                <div className='flex flex-1 items-center justify-between'>
-            <p className='text-lg text-gray-200'>
+            <p className='text-lg text-[#262627]'>
               Technologies
-              <span className='block text-sm text-gray-400'>
+              <span className='block text-sm text-[#262627]'>
                 Express, flask, sheri.js etc.
               </span>
             </p>
             <a href='https://github.com/aaayushh7'>
               <div>
-                <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
+                <IoLogoGithub className='text-[#262627] text-3xl cursor-pointer' />
               </div>
             </a>
           </div>

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <AnimatePresence initial={false}>
-      <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-primary pb-20">
+      <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-[#f1f1f1] pb-20">
         {/*Navigation bar*/}
         <Navbar />
         {/* 3d models  */}
@@ -27,14 +27,14 @@ function App() {
           <Project />
           {/* contact section  */}
           <section id='Contact' className='flex flex-col items-center justify-center w-full my-24'>
-            <p className='text-2xl text-gray-300 capitalize'> <b>Contact me</b> </p>
+            <p className='text-2xl text-[#262627] capitalize'> <b>Contact me</b> </p>
             {/* linkedin  */}
             <div className='flex items-center justify-center w-full my-4 flex-wrap gap-4'>
               <motion.a
                 whileTap={{ scale: 0.8 }}
                 href='https://www.linkedin.com/in/ayush-tiwari-538ab824b/' className='w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3'>
                 <IoLogoLinkedin className='text-blue-700 text-3xl cursor-pointer' />
-                <p className='text-lg text-textBase'>Linkedin</p>
+                <p className='text-lg text-[#262627]'>Linkedin</p>
               </motion.a>
             </div>
             {/* github */}
@@ -42,8 +42,8 @@ function App() {
               <motion.a
                 whileTap={{ scale: 0.8 }}
                 href='https://github.com/aaayushh7' className='w-full md:w-auto px-3 md:px-8 py-5 border border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100 ease-in-out cursor-pointer flex items-center justify-center gap-3'>
-                <IoLogoGithub className='text-textBase text-3xl cursor-pointer' />
-                <p className='text-lg text-textBase'>Github</p>
+                <IoLogoGithub className='text-[#101d32] text-3xl cursor-pointer' />
+                <p className='text-lg text-[#262627]'>Github</p>
               </motion.a>
             </div>
           </section>

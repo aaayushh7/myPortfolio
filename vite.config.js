@@ -13,6 +13,9 @@ export default defineConfig({
       plugins: [tailwindcss()],
     },
   },
+  optimizeDeps: {
+    exclude: ['swiper'],
+  },
   build: {
     outDir: "build",
   },

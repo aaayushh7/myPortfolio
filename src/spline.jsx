@@ -4,33 +4,33 @@ import { IoAtCircleOutline } from 'react-icons/io5';
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function SplineScene() {
-  const [loading, setLoading] = useState(true);
-  const [progress, setProgress] = useState(0);
+  // const [loading, setLoading] = useState(true);
+  // const [progress, setProgress] = useState(0);
 
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setProgress(prevProgress => {
-        if (prevProgress === 100) {
-          setLoading(false);
-          clearInterval(timer);
-          return prevProgress;
-        }
-        const diff = Math.random() * 0.5 + 0.5;
-        const newProgress = Number((prevProgress + diff).toFixed(2));
-        return Math.min(newProgress, 100);
-      });
-    }, 100);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setProgress(prevProgress => {
+  //       if (prevProgress === 100) {
+  //         setLoading(false);
+  //         clearInterval(timer);
+  //         return prevProgress;
+  //       }
+  //       const diff = Math.random() * 0.5 + 0.5;
+  //       const newProgress = Number((prevProgress + diff).toFixed(2));
+  //       return Math.min(newProgress, 100);
+  //     });
+  //   }, 100);
 
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
-  const splineSceneURL = "https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode";
+  // const splineSceneURL = "https://prod.spline.design/1qS3P54MJSoxiqwO/scene.splinecode";
 
   return (
 
     <section className="relative h-screen w-[99%]" id='home'>
-      {loading ? (
+      {/* {loading ? (
         <div className="absolute z-10 flex items-center justify-center bg-black bg-opacity-20 w-full h-full">
           <div className="text-lg text-white">
             <div className="text-center">
@@ -47,23 +47,18 @@ export default function SplineScene() {
           </div>
         </div>
       ) : (
-        <>
+      <> */}
 
           <Suspense fallback={<div>Loading...</div>}>
-            <Spline scene={splineSceneURL} />
+            <Spline scene="https://prod.spline.design/1qS3P54MJSoxiqwO/scene.splinecode" />
           </Suspense>
 
           <div className='absolute bottom-5 w-full justify-center items-center flex'>
-            <div className='shadow-md p-4 flex items-center justify-center bg-zinc-900 rounded-3xl cursor-pointer'>
-              <IoAtCircleOutline className='text-md text-textBase'></IoAtCircleOutline>
-              <p className='text-md text-textBase'>ayushtiwari.co</p>
+            <div className='shadow-md p-4 flex items-center justify-center bg-[#5f80ea] rounded-3xl cursor-pointer'>
+              <IoAtCircleOutline className='text-md text-[#fff]'></IoAtCircleOutline>
+              <p className='text-md text-[#fff]'>ayushtiwari.co</p>
             </div>
           </div>
-        </>
-      )}
-
-
-
     </section>
   );
 }
