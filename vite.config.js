@@ -17,7 +17,7 @@ export default defineConfig({
     exclude: ['swiper'],
   },
   build: {
-    outDir: "build",
+    outDir: "dist",
   },
   plugins: [
     reactRefresh(),
