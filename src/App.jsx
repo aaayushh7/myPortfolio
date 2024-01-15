@@ -12,7 +12,7 @@ function App() {
 
   return (
     <AnimatePresence initial={false}>
-      <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-[#f1f1f1] pb-20">
+      <div className="flex w-screen min-h-screen flex-col items-center justify-center relative bg-[#f1f1f1]">
         {/*Navigation bar*/}
         <Navbar />
         {/* 3d models  */}
