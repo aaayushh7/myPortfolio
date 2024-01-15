@@ -19,7 +19,7 @@ const About = () => {
       {/*Content box */}
       <div className='w-full h-490 flex flex-col items-center justify-center'>
         <p className=' text-lg text-[#262627] text-center'>
-          I am a passionate individual with a deep love for exploring new horizons. Traveling has been a significant source of inspiration for me, broadening my perspective and nurturing a sense of adventure. Alongside, my insatiable curiosity has led me to dive into the ever-evolving world of technology, where I constantly strive to learn and keep up with the latest advancements. Building ecosystems that foster innovation and connectivity is a personal mission, as I believe in the transformative power of interconnectedness. When not engrossed in the realm of technology, you can find me strumming my guitar, indulging in music, or designing captivating websites. With a clear aim to specialize in connectivity, I am determined to contribute my expertise to the ever-expanding field of technology.
+        Passionate explorer with a love for travel and a tech enthusiast. Committed to fostering innovation and connectivity in the ever-evolving tech world. Specializing in building transformative ecosystems. Beyond tech, I enjoy music, playing guitar, and designing captivating websites. Determined to contribute expertise to the expanding field of technology.
         </p>
       </div>
     </section>
