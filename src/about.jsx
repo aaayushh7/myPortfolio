@@ -1,4 +1,4 @@
-import ayush from './Images/Ayush.jpg';
+import ayush from '/Images/Ayush.jpg';
 
 const About = () => {
   return (
