@@ -3,31 +3,27 @@ import { IoAtCircleOutline } from 'react-icons/io5';
 
 import './index.css';
 
-
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function SplineScene() {
-  const CoolLoadingAnimation = () => (
-    <div className='cool-loading-animation'>
-      <div className='blue-circle'></div>
-    </div>
+  const LottieAnimation = () => (
+    <dotlottie-player autoplay loop mode="normal"
+      src="./Images/Animation 1705694640295.lottie"
+      style={{width: "320px", height:"320px"}}></dotlottie-player>
   );
   
   return (
-
     <section className="relative h-screen w-[99%]" id='home'>
+      <Suspense fallback={<LottieAnimation />}>
+        <Spline scene="https://prod.spline.design/1qS3P54MJSoxiqwO/scene.splinecode" />
+      </Suspense>
 
-          <Suspense fallback={<CoolLoadingAnimation />}>
-            <Spline scene="https://prod.spline.design/1qS3P54MJSoxiqwO/scene.splinecode" />
-          </Suspense>
-
-          <div className='absolute bottom-5 w-full justify-center items-center flex'>
-            <div className='shadow-md p-4 flex items-center justify-center bg-[#5f80ea] rounded-3xl cursor-pointer'>
-              <IoAtCircleOutline className='text-md text-[#fff]'></IoAtCircleOutline>
-              <p className='text-md text-[#fff]'>ayushtiwari.co</p>
-              
-            </div>
-          </div>
+      <div className='absolute bottom-5 w-full justify-center items-center flex'>
+        <div className='shadow-md p-4 flex items-center justify-center bg-[#5f80ea] rounded-3xl cursor-pointer'>
+          <IoAtCircleOutline className='text-md text-[#fff]'></IoAtCircleOutline>
+          <p className='text-md text-[#fff]'>ayushtiwari.co</p>
+        </div>
+      </div>
     </section>
   );
 }
