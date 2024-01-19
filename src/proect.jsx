@@ -10,13 +10,13 @@ import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
-import website from './Images/foodilse.jpg';
-import appl from './Images/Calc.jpg';
-import anp from './Images/ANPR.jpg';
-import track from './Images/trackhub.png'
-import can from './Images/can.png';
-import more from './Images/gola.png'
-import git from './Images/more.png'
+import website from '/Images/foodilse.jpg';
+import appl from '/Images/Calc.jpg';
+import anp from '/Images/ANPR.jpg';
+import track from '/Images/trackhub.png'
+import can from '/Images/can.png';
+import more from '/Images/gola.png'
+import git from '/Images/more.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { IoLogoGithub } from 'react-icons/io5';
 
