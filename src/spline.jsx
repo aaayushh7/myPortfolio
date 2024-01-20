@@ -28,8 +28,6 @@ export default function SplineScene() {
   );
 }
 
-
-
 // previous code ...
 
 // import React from 'react'
