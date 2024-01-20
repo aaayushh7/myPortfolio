@@ -6,15 +6,10 @@ import './index.css';
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function SplineScene() {
-  const LottieAnimation = () => (
-    <dotlottie-player autoplay loop mode="normal"
-      src="./Images/Animation 1705694640295.lottie"
-      style={{width: "320px", height:"320px"}}></dotlottie-player>
-  );
   
   return (
     <section className="relative h-screen w-[99%]" id='home'>
-      <Suspense fallback={<LottieAnimation />}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Spline scene="https://prod.spline.design/1qS3P54MJSoxiqwO/scene.splinecode" />
       </Suspense>
 
