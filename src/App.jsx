@@ -5,7 +5,7 @@ import Project from './proect';
 import About from './about';
 import Navbar from './Navbar';
 import TimeLin from './time';
-// import Plinefile from './spline';
+import Plinefile from './spline';
 import './index.css'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         {/*Navigation bar*/}
         <Navbar />
         {/* 3d models  */}
-        {/* < Plinefile/> */}
+        < Plinefile/>
         {/*Main section */}
         <main className='w-[80%] mt-11'>
           {/*about section*/}
