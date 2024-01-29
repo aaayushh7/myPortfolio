@@ -10,7 +10,7 @@ export default function SplineScene() {
   return (
     <section className="relative h-screen w-[99%]" id='home'>
       <Suspense fallback={<div>Loading...</div>}>
-        <Spline scene="https://prod.spline.design/1qS3P54MJSoxiqwO/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/2XATKb6a1CPylYeF/scene.splinecode" />
       </Suspense>
 
       <div className='absolute bottom-5 w-full justify-center items-center flex'>
