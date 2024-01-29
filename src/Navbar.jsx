@@ -9,6 +9,7 @@ const Navbar = React.memo(() => {
 
     const [isActive, setIsActive] = useState(false)
     const [isLoading, setIsLoading] = useState(false);
+    const [isLoading2, setIsLoading2] = useState(false);
 
     const handleDownloadResume = () => {
         setIsLoading(true);
@@ -18,6 +19,15 @@ const Navbar = React.memo(() => {
 
         }, 3000);
     };
+    const handleDownloadResume2 = () => {
+        setIsLoading2(true);
+
+        setTimeout(() => {
+            setIsLoading2(false);
+
+        }, 3000);
+    };
+
     return (
         <AnimatePresence>
             <nav className='w-full px-6 z-50 fixed inset-x-0  top-2 flex justify-center items-center'>
@@ -42,13 +52,14 @@ const Navbar = React.memo(() => {
                             )}
                         </button>
                         <button
+                        onClick={handleDownloadResume2}
                             className="ml-auto text-base hover:text-[#262627] font-medium text-slate-100 cursor-pointer duration-500 ease-in-out bg-icodow hover:bg-inherit shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-2 py-1 rounded-3xl border border-icodow"
                         >
                             <a href='/resume-ayush.pdf' target='_blank' className="flex items-center">
                                 <IoEyeOutline className="h-6 w-6" />
                                 
                             </a>
-                            {isLoading && (
+                            {isLoading2 && (
                                 <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
                             )}
                         </button>
@@ -87,13 +98,13 @@ const Navbar = React.memo(() => {
                                 )}
                             </button>
                             <button
-                            onClick={handleDownloadResume}
-                            className="ml-auto text-base hover:text-[#262627] font-medium text-slate-100 cursor-pointer duration-500 ease-in-out bg-icodow hover:bg-inherit shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-2 py-1 rounded-3xl border border-icodow"
+                            onClick={handleDownloadResume2}
+                            className=" text-base hover:text-[#262627] font-medium text-slate-100 cursor-pointer duration-500 ease-in-out bg-icodow hover:bg-inherit shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-2 py-1 rounded-3xl border border-icodow"
                             >
                             <a href='/resume-ayush.pdf' target='_blank' className="flex items-center">
                                 <IoEyeOutline className="h-6 w-6" />
                             </a>
-                            {isLoading && (
+                            {isLoading2 && (
                                 <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
                             )}
                             </button>
