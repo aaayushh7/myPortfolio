@@ -87,16 +87,16 @@ const Navbar = React.memo(() => {
                                 )}
                             </button>
                             <button
+                            onClick={handleDownloadResume}
                             className="ml-auto text-base hover:text-[#262627] font-medium text-slate-100 cursor-pointer duration-500 ease-in-out bg-icodow hover:bg-inherit shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-2 py-1 rounded-3xl border border-icodow"
-                        >
+                            >
                             <a href='/resume-ayush.pdf' target='_blank' className="flex items-center">
                                 <IoEyeOutline className="h-6 w-6" />
-                                
                             </a>
                             {isLoading && (
                                 <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
                             )}
-                        </button>
+                            </button>
                         </motion.div>
                        
                     )}
