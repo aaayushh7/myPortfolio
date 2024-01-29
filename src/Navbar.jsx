@@ -1,4 +1,4 @@
-import { IoMenu, IoArrowDownCircleOutline } from 'react-icons/io5'
+import { IoMenu, IoArrowDownCircleOutline, IoEyeOutline } from 'react-icons/io5'
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
@@ -41,6 +41,17 @@ const Navbar = React.memo(() => {
                                 <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
                             )}
                         </button>
+                        <button
+                            className="ml-auto text-base hover:text-[#262627] font-medium text-slate-100 cursor-pointer duration-500 ease-in-out bg-icodow hover:bg-inherit shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-2 py-1 rounded-3xl border border-icodow"
+                        >
+                            <a href='/resume.pdf' target='_blank' className="flex items-center">
+                                <IoEyeOutline className="h-6 w-6" />
+                                
+                            </a>
+                            {isLoading && (
+                                <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
+                            )}
+                        </button>
                     </div>
 
                     <motion.div
@@ -75,6 +86,17 @@ const Navbar = React.memo(() => {
                                     <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
                                 )}
                             </button>
+                            <button
+                            className="ml-auto text-base hover:text-[#262627] font-medium text-slate-100 cursor-pointer duration-500 ease-in-out bg-icodow hover:bg-inherit shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-2 py-1 rounded-3xl border border-icodow"
+                        >
+                            <a href='/resume.pdf' target='_blank' className="flex items-center">
+                                <IoEyeOutline className="h-6 w-6" />
+                                
+                            </a>
+                            {isLoading && (
+                                <div className="border-t-4 border-te animate-spin rounded-full h-6 w-6 ml-2" />
+                            )}
+                        </button>
                         </motion.div>
                        
                     )}
