@@ -6,7 +6,7 @@ import './index.css';
 const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 export default function SplineScene() {
-  
+
   return (
     <section className="relative h-screen w-[99%]" id='home'>
       <Suspense fallback={<div>Loading...</div>}>
