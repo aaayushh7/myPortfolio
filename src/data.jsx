@@ -1,4 +1,4 @@
-import {IoFastFoodOutline,IoLogoAndroid,IoNuclearOutline,IoLogoTux,IoCodeSlash,IoGitBranch} from 'react-icons/io5'
+import { IoFastFoodOutline, IoLogoAndroid, IoNuclearOutline, IoLogoTux, IoCodeSlash, IoGitBranch } from 'react-icons/io5'
 
 export const Experience = [
     {
