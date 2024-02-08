@@ -19,7 +19,7 @@ const About = () => {
       {/*Content box */}
       <div className='w-full h-490 flex flex-col items-center justify-center'>
         <p className=' text-lg text-[#262627] text-center'>
-        Passionate explorer with a love for travel and a tech enthusiast. Committed to fostering innovation and connectivity in the ever-evolving tech world. Specializing in building transformative ecosystems. Beyond tech, I enjoy music, playing guitar, and designing captivating websites. Determined to contribute expertise to the expanding field of technology.
+          Passionate explorer with a love for travel and a tech enthusiast. Committed to fostering innovation and connectivity in the ever-evolving tech world. Specializing in building transformative ecosystems. Beyond tech, I enjoy music, playing guitar, and designing captivating websites. Determined to contribute expertise to the expanding field of technology.
         </p>
       </div>
     </section>
