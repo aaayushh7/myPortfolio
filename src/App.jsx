@@ -16,7 +16,7 @@ function App() {
         {/*Navigation bar*/}
         <Navbar />
         {/* 3d models  */}
-        < Plinefile className="absolute"/>
+        < Plinefile className="absolute" />
         {/*Main section */}
         <main className='w-[80%] mt-11'>
           {/*about section*/}
