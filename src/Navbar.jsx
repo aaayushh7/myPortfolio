@@ -43,7 +43,7 @@ const Navbar = React.memo(() => {
                             onClick={handleDownloadResume}
                             className="ml-auto text-base hover:text-[#262627] font-medium text-slate-100 cursor-pointer duration-500 ease-in-out bg-icodow hover:bg-inherit shadow-sm hover:shadow-shadowlue flex items-center gap-2 px-3 py-1 rounded-3xl border border-icodow"
                         >
-                            <a href='https://drive.google.com/uc?export=download&id=1_cwvSpfDsWjm6ooX9T2EO99zgeigaLrf' className="flex items-center gap-2">
+                            <a href='https://drive.google.com/uc?export=download&id=1LewrGzqirMXAma20h8HIEfpOSIiUvl_9' className="flex items-center gap-2">
                                 <IoArrowDownCircleOutline className="h-6 w-6" />
                                 <span>Resume</span>
                             </a>
